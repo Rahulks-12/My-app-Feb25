@@ -12,6 +12,7 @@ import { BmiComponent } from './bmi/bmi.component';
 import { DegreesComponent } from './degrees/degrees.component';
 import { EmiComponent } from './emi/emi.component';
 import { DirctivesComponent } from './dirctives/dirctives.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[{path:'welcome',component:WelcomeComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
 {path:'bmi',component:BmiComponent},
 {path:'degrees',component:DegreesComponent},
 {path:'Emi',component:EmiComponent},
-{path:'directives',component:DirctivesComponent}]},
+{path:'directives',component:DirctivesComponent},
+{path:'employees',component:EmployeesComponent}]},
     {path:'',component:LoginComponent},// default routing
   {path:'login',component:LoginComponent},
 {  path:'**',component:Error404Component},//wild card routing
