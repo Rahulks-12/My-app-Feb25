@@ -1,0 +1,13 @@
+<body>           
+<h1>Calculator</h1>
+<div id="card1">    
+    
+  <h3>{{result}} <label>Result</label></h3>
+  <label>Number</label>
+  <input type="number" [(ngModel)] ="num1"><br>
+
+  <label>Number</label>
+  <input type="number" [(ngModel)]="num2"><br>
+  <button (click)="add()" [disabled]=" !num1 || !num2">Add</button>
+</div>
+</body>

@@ -1,0 +1,25 @@
+.parent{
+    width:100vw;
+    height:100vh;
+    background-color: aqua;
+    display: flex;
+}
+.left{
+    width:20%;
+    height: 108%;
+    background-color: blue;
+    text-align: left;
+}
+/* .left h3{
+    margin-left: 70px;
+    margin: 50px; */
+/* } */
+.right{
+    width:80%;
+    height:100%;
+    background-color:white;
+}
+#ltop{
+    background-color: aqua;
+    
+}

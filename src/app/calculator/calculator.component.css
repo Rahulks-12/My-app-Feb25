@@ -1,0 +1,17 @@
+body{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(white);
+}
+#card1{
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 200px 400px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 50px;
+    background-image: linear-gradient(yellow,white);
+}

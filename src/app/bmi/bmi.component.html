@@ -1,0 +1,10 @@
+<div class="parent">
+    <div class="card">
+        <h3>{{result}}</h3>
+        <label>weight</label>
+        <input type="number" [(ngModel)]="num1"><br>
+        <label>Height</label>
+        <input type="number" [(ngModel)]="num2"><br>
+        <button id="area" (click)="bmi()" [disabled]="!num1||!num2">Bmi</button>
+    </div>
+</div>

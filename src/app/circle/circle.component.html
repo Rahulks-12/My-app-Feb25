@@ -1,0 +1,13 @@
+<div id="parent">
+    <div id="card3">
+        <h3>{{result}} Area</h3>
+        <label>Pi      </label>
+        <input type="number" [(ngModel)]="num1"><br>
+
+        <label>Radius</label>
+        <input type="number" [(ngModel)]="num2"><br><br>
+        <button id="area" (click)="add()" [disabled]=" !num1 || !num2">Area of a Circle</button>
+
+
+    </div>
+</div>

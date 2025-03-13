@@ -1,0 +1,13 @@
+<h1>Emi</h1>
+<div class="parent">
+    <div class="card">
+        <label>Principal amount</label>
+        <input type="number" [(ngModel)]="num1"><br>
+        <label>Rate of Interest</label>
+        <input type="number" [(ngModel)]="num2"><br>
+        <label>Number of periods</label>
+        <input type="number" [(ngModel)]="num3"><br>
+        <button (click)="Emi()" >Emi</button>
+        <h3>{{result}}</h3>
+    </div>
+</div>

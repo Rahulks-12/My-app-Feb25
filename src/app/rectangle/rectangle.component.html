@@ -1,0 +1,15 @@
+<body>
+    <h1>Rectangle</h1>
+    <div id="card2">
+        <h3>{{result}} Area</h3>
+        <label>Lenght</label>
+        <input type="number" [(ngModel)] ="num1"><br>
+
+        <label>Breadth</label>
+        <input type="number" [(ngModel)] ="num2"><br>
+<br>
+<button id="area" (click)="add()" [disabled]=" !num1 || !num2">Area of a Rectangle</button>
+
+
+    </div>
+</body>

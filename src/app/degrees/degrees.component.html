@@ -1,0 +1,8 @@
+<h1>Degrees to Farenheit</h1>
+<div id="parent">
+    <h3>{{result}}Farenheit</h3>
+    <label>Centegrate</label>
+    <input type="number" [(ngModel)]="num1"><br>
+    <button  (click)="convert()" [disabled]="!num1">convert</button>
+
+</div>
