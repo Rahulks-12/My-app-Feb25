@@ -15,6 +15,7 @@ import { BmiComponent } from './bmi/bmi.component';
 import { FormsModule } from '@angular/forms';
 import { DegreesComponent } from './degrees/degrees.component';
 import { EmiComponent } from './emi/emi.component';
+import { DirctivesComponent } from './dirctives/dirctives.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EmiComponent } from './emi/emi.component';
     CircleComponent,
     BmiComponent,
     DegreesComponent,
-    EmiComponent
+    EmiComponent,
+    DirctivesComponent
   ],
   imports: [
     BrowserModule,
