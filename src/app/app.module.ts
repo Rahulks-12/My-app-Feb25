@@ -17,6 +17,13 @@ import { DegreesComponent } from './degrees/degrees.component';
 import { EmiComponent } from './emi/emi.component';
 import { DirctivesComponent } from './dirctives/dirctives.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AccountsComponent } from './accounts/accounts.component';
+import { FlipkartapiComponent } from './flipkartapi/flipkartapi.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+
 
 @NgModule({
   declarations: [
@@ -33,12 +40,19 @@ import { EmployeesComponent } from './employees/employees.component';
     DegreesComponent,
     EmiComponent,
     DirctivesComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    FlipkartComponent,
+    VehicleComponent,
+    AccountsComponent,
+    FlipkartapiComponent,
+    PinterestComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

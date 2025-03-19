@@ -1,0 +1,19 @@
+.top{
+    width:100%;
+    height:20%;
+    background-color: blueviolet;
+    display:flex;
+    justify-content:space-around;
+text-align:;
+
+}
+.bottom{
+    width:100%;
+    height:80%;
+    background-color: rgb(36, 199, 27);
+}
+#heading{
+    text-align: center;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
