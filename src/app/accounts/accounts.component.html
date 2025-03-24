@@ -1,4 +1,17 @@
 <h1>Accounts</h1>
+<select [(ngModel)]="column">
+    <option>account_name</option>
+    <option>city</option>
+    <option>ifsc_code</option> 
+    <option>id</option>
+</select>
+<select [(ngModel)]="order" >
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="sort()">Sort</button>
+<input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter thre value">
+<button routerLink="/dashboard/create-accounts" class="btn btn-info">Create Accounts</button>
 <table class="table table-dark">
     <thead>
 

@@ -18,6 +18,11 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartapiComponent } from './flipkartapi/flipkartapi.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { StudentidComponent } from './studentid/studentid.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentFormComponent } from './student-form/student-form.component';
 
 
 const routes: Routes = [
@@ -35,7 +40,12 @@ const routes: Routes = [
 {path:'vehicle',component:VehicleComponent},
 {path:'accounts',component:AccountsComponent},
 {path:'flipkartapi',component:FlipkartapiComponent},
-{path:'pinterest',component:PinterestComponent}
+{path:'pinterest',component:PinterestComponent},
+  {path:'create-vehicle',component:CreateVehicleComponent},
+  {path:'create-accounts',component:CreateAccountsComponent},
+  {path:'studentid',component:StudentidComponent},
+  {path:'create-user',component:CreateUserComponent},
+  {path:'student-form',component:StudentFormComponent}
 ]},
     {path:'',component:LoginComponent},// default routing
   {path:'login',component:LoginComponent},

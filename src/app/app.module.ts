@@ -12,7 +12,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DegreesComponent } from './degrees/degrees.component';
 import { EmiComponent } from './emi/emi.component';
 import { DirctivesComponent } from './dirctives/dirctives.component';
@@ -23,6 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartapiComponent } from './flipkartapi/flipkartapi.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountsComponent } from './create-accounts/create-accounts.component';
+import { StudentidComponent } from './studentid/studentid.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentFormComponent } from './student-form/student-form.component';
 
 
 @NgModule({
@@ -46,13 +51,19 @@ import { PinterestComponent } from './pinterest/pinterest.component';
     AccountsComponent,
     FlipkartapiComponent,
     PinterestComponent,
+    CreateVehicleComponent,
+    CreateAccountsComponent,
+    StudentidComponent,
+    CreateUserComponent,
+    StudentFormComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

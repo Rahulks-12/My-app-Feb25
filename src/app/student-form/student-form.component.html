@@ -1,0 +1,25 @@
+<h1>Student-form</h1>
+<form [formGroup]="studentForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+    <label>Class</label>
+    <input type="number" formControlName="class"><br>
+    <label>Father Name</label>
+    <input type="text" formControlName="fathername"><br>
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Date of Birth:</label>
+    <input type="date" formControlName="dob"><br>
+    <div formGroupName="address">
+        <label>Address Line:</label>
+        <input type="text" formControlName="addressLine"><br>
+        <label>City</label>
+        <input type="text" formControlName="city"><br>
+        <label>State</label>
+        <input type="text" formControlName="state"><br>
+        <label>Pincode</label>
+        <input type="number" formControlName="pincode"><br>
+    </div>
+    
+    <button (click)="submit()" class="btn btn-info">Submit</button>
+</form>
