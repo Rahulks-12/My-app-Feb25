@@ -17,4 +17,16 @@ export class StudentidService {
   getfilteredstudentid(term:any):Observable<any>{
 return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?filter="+term);
   }
+  getSortedStudentid(column:any,order:any):Observable<any>{
+    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student="+column+"&order="+order)
+  }
+
+  getPaginatedstudentid(limit:any,page:any):Observable<any>{
+    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student="+limit+"&page="+page);
+  }
+  createStudentid(data:any):Observable<any>{
+    return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/student",data)
+  }
 }
+
+

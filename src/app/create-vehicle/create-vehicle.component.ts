@@ -29,6 +29,7 @@ constructor(private _vehicleService:VehicleService, private _router:Router,priva
       alert("Internal Server Error")
     }
   )
+  if(this.id){
 _vehicleService.getVehicle(this.id).subscribe(
   (data:any)=>{
     console.log(data);
@@ -38,26 +39,9 @@ _vehicleService.getVehicle(this.id).subscribe(
     alert("Internal Server Error")
   }
 )
-
-
-
-
+  }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 create(){
   if(this.id){
     console.log(this.vehicleForm.value);

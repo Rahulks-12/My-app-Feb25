@@ -1,0 +1,11 @@
+<form [formGroup]="studentform"> Name
+    <label>Student name</label>
+    <input type="text" formControlName="name"><br>
+    <label>dob</label>
+    <input type="text" formControlName="dob"><br>
+    <label>School Name</label>
+    <input type="text" formControlName="school_name"><br>
+    <label>phone</label>
+    <input type="text" formControlName="phone"><br>
+    <button (click)="create()" >Create-student</button>
+</form>

@@ -2,3 +2,10 @@
 <label>Please press the dashboard button</label><br>
 
 <a href="http://localhost:4200/dashboard" >Dashboard</a>
+<form [formGroup]="loginForm">
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Password:</label>
+    <input type="password" formControlName="password"><br>
+    <button class="btn btn-info" (click)="login()">Login</button>
+</form>

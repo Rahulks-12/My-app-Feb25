@@ -24,10 +24,14 @@ import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateStudentidComponent } from './create-studentid/create-studentid.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent,children:[{path:'welcome',component:WelcomeComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard],children:[{path:'welcome',component:WelcomeComponent},
     {path:'data-binding',component:DataBindingComponent},
   {path:'calculator',component:CalculatorComponent},
 {path:'rectangle',component:RectangleComponent},
@@ -38,7 +42,7 @@ const routes: Routes = [
 {path:'directives',component:DirctivesComponent},
 {path:'employees',component:EmployeesComponent},
 {path:'Flipkart',component:FlipkartComponent},
-{path:'vehicle',component:VehicleComponent},
+{path:'vehicle',component:VehicleComponent,canActivate:[AuthenticationGuard]},
 {path:'accounts',component:AccountsComponent},
 {path:'flipkartapi',component:FlipkartapiComponent},
 {path:'pinterest',component:PinterestComponent},
@@ -48,7 +52,10 @@ const routes: Routes = [
   {path:'create-user',component:CreateUserComponent},
   {path:'student-form',component:StudentFormComponent},
   {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-  {path:'edit-vehicle/:id',component:CreateVehicleComponent}
+  {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+  {path:'create-studentid',component:CreateStudentidComponent},
+  {path:'sibling1',component:Sibling1Component},
+  {path:'parent',component:ParentComponent}
 ]},
     {path:'',component:LoginComponent},// default routing
   {path:'login',component:LoginComponent},

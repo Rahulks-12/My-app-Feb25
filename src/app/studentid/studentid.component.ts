@@ -21,7 +21,7 @@ export class StudentidComponent {
     );
   }
   delete(id:any){
-if(confirm("Are you sure u]you want to delete")==true)
+if(confirm("Are you sure you want to delete")==true)
 {
   this._studentidService.deleteStudentid(id).subscribe(
     (data:any)=>{
@@ -40,6 +40,30 @@ if(confirm("Are you sure u]you want to delete")==true)
         this.studentid=data;
       },(err:any)=>{
         alert("Internal server Error")
+      }
+    )
+  }
+  column:string='';
+  order:string='';
+  sort(){
+    this.studentid.getSortedStudentid(this.column,this.order).subscribe(
+      (data:any)=>{
+        console.log(data);
+        this.studentid=data;
+      },(err:any)=>{
+        alert("Internal Server Error!")
+      }
+    )
+  }
+  limit:string='';
+  page:string='';
+  pagination(){
+    this._studentidService.getPaginatedstudentid(this.limit,this.page).subscribe(
+      (data:any)=>{
+        console.log(data);
+        this.studentid=data;
+      },(err:any)=>{
+        alert("Internal Server Error")
       }
     )
   }

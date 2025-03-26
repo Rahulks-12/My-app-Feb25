@@ -29,6 +29,13 @@ import { StudentidComponent } from './studentid/studentid.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateStudentidComponent } from './create-studentid/create-studentid.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { AppTextareaComponent } from './app-textarea/app-textarea.component';
 
 
 @NgModule({
@@ -58,6 +65,13 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     CreateUserComponent,
     StudentFormComponent,
     VehicleDetailsComponent,
+    CreateStudentidComponent,
+    Sibling1Component,
+    Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    AppTextareaComponent,
     
   ],
   imports: [

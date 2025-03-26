@@ -1,7 +1,28 @@
 <div id="header"><h1>student Id</h1>
 <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="Enter the Details">
+<select [(ngModel)]="column">
+  <option>name</option>
+  <option>school_pin</option>
+  <option>phone</option>
+  </select>
+<select [(ngModel)]="order">
+<option>asc</option>
+<option>desc</option>
+</select>
+<button (click)="sort()">Sort</button>
 
-
+<select [(ngModel)]="limit">
+  <option>5</option>
+  <option>4</option>
+  <option>3</option>
+</select>
+<select [(ngModel)]="page" >
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+<button (click)="pagination()">Pagination</button>
+<button routerLink="/dashboard/create-studentid">Create-studentid</button>
 </div>
 <div class="parent" >
   <div class="card" *ngFor="let student of studentid">
