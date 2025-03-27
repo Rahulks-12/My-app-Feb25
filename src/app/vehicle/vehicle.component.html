@@ -40,7 +40,7 @@
             <td>{{i+1}}</td>
             <td>{{vehicle.Vehicle}}</td>
             <td>{{vehicle.color}}</td>
-            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.cost | balance}}<td>
             <td>{{vehicle.fuel}}</td>
             <td>
                 <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}">Edit</button>

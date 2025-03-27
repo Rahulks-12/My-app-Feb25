@@ -38,7 +38,7 @@
         <tr *ngFor="let product of Products;let i=index"> 
             <td>{{i+1}}</td>
             <td>{{product.ProductName}}</td>
-            <td>{{product.Price}}</td>
+            <td>{{product.Price | balance  }}</td>
             <td>{{product.Rating}}</td>
             <td>{{product.FreeDelivery}}</td>
             <td><button id="button" (click)="delete(i)">Delete</button> </td>

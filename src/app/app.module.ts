@@ -37,6 +37,7 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { AppTextareaComponent } from './app-textarea/app-textarea.component';
 import { Capital1Directive } from './capital1.directive';
+import { BalancePipe } from './balance.pipe';
 
 
 @NgModule({
@@ -74,6 +75,7 @@ import { Capital1Directive } from './capital1.directive';
     RatingComponent,
     AppTextareaComponent,
     Capital1Directive,
+    BalancePipe,
     
   ],
   imports: [
