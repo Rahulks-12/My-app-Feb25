@@ -1,6 +1,7 @@
  <div id="bg">
     <div class="card" *ngFor="let flipkart of flipkartapi">  
         <div class="img"> <img id="img1" src={{flipkart.image}}  > </div>
+        <app-rating [rating]="flipkart.rating?.rate"></app-rating>
         <div class="category">{{flipkart.category}}</div>
         <div class="title">{{flipkart.title}}</div>
         <div class="price">{{flipkart.price}}</div>
