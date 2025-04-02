@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { CreateUserService } from '../create-user.service';
+import { googleMail } from '../validators';
 
 @Component({
   selector: 'app-create-user',
@@ -9,7 +10,7 @@ import { CreateUserService } from '../create-user.service';
 })
 export class CreateUserComponent {
   public userForm:FormGroup=new FormGroup({
-    name:new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(12)]),
+    name:new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(12),googleMail]),
     email:new FormControl(),
     password:new FormControl(),
        mobile:new FormControl(),
@@ -61,4 +62,16 @@ deletecard(i:number){
 
 function maxLenght(arg0: number): import("@angular/forms").ValidatorFn {
   throw new Error('Function not implemented.');
+  
+
+
+
+  
+
+
+
+
+
 }
+
+

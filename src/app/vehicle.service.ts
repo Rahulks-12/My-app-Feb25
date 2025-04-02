@@ -9,6 +9,11 @@ import { Observable } from 'rxjs';
 export class VehicleService {
 
   constructor(private _httpClient:HttpClient) { }
+baseUrl:string='/assets/data.json';
+  // baseUrl:string="https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction";
+
+
+
   getVehicles():Observable<any>{
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction")
   }
@@ -34,4 +39,4 @@ export class VehicleService {
   updateVehicle(id:any,data:any):Observable<any>{
     return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/"+id,data)
   }
-}
+ }
