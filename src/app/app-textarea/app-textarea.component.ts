@@ -7,9 +7,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class AppTextareaComponent {
 @Output() childEvent:EventEmitter<string>= new EventEmitter();
-area:any='';
+area:string='';
+count1:number=0;
 send(){
-  this.childEvent.emit(this.area);
+  for(let count=0;count<this.area.length;count++){
+    this.count1++;
+   
+
+  }
+ 
 }
-count:number=0;
+
 }

@@ -19,7 +19,7 @@ import { DirctivesComponent } from './dirctives/dirctives.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartapiComponent } from './flipkartapi/flipkartapi.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
@@ -37,6 +37,8 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { AppTextareaComponent } from './app-textarea/app-textarea.component';
 import { CapitalDirective } from './capital.directive';
+import { TokenInterceptor } from './token.interceptor';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 @NgModule({
@@ -75,15 +77,25 @@ import { CapitalDirective } from './capital.directive';
     AppTextareaComponent,
     CapitalDirective,
     
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
-  providers: [],
+  providers: [
+    {
+    provide:HTTP_INTERCEPTORS,
+    useClass:TokenInterceptor,
+    multi:true
+  }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
