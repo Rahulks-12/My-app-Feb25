@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { Error404Component } from './error404/error404.component';
@@ -28,8 +28,7 @@ import { CreateStudentidComponent } from './create-studentid/create-studentid.co
 import { AuthenticationGuard } from './authentication.guard';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { ParentComponent } from './parent/parent.component';
-import { AboutCeoComponent } from './about-us/about-ceo/about-ceo.component';
-import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 const routes: Routes = [
@@ -58,11 +57,7 @@ const routes: Routes = [
   {path:'create-studentid',component:CreateStudentidComponent},
   {path:'sibling1',component:Sibling1Component},
   {path:'parent',component:ParentComponent},
-  {path:'about-ceo',component:AboutCeoComponent},
-  {path:'about-company',component:AboutCompanyComponent},
-  {path:'payments',
-    loadChildren:()=>import('./payments/payments.module').then(m=>m.PaymentsModule)
-  }
+  {path:'life-cycle-hooks',component:LifeCycleHooksComponent}
 ]},
     {path:'',component:LoginComponent},// default routing
   {path:'login',component:LoginComponent},
@@ -72,7 +67,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

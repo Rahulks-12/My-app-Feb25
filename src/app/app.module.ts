@@ -39,6 +39,7 @@ import { AppTextareaComponent } from './app-textarea/app-textarea.component';
 import { CapitalDirective } from './capital.directive';
 import { TokenInterceptor } from './token.interceptor';
 import { AboutUsModule } from './about-us/about-us.module';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 
 @NgModule({
@@ -76,6 +77,7 @@ import { AboutUsModule } from './about-us/about-us.module';
     RatingComponent,
     AppTextareaComponent,
     CapitalDirective,
+    LifeCycleHooksComponent,
     
     
     
